@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <!---Menu encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="img/yerko.png" width="150px"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    <li><a href="#" id="userUser"></a></li>
+                  
+                </ul>
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <div class="contenedor">
+        <table class="table">
+            <thead class="table-info">
+              <tr>
+                <th scope="col">Cuenta</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Saldo</th>
+                <th scope="col">Saldo Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="idCuenta"></td>
+                <td>caja de ahorro</td>
+                <td id="idSaldo"></td>
+                <td id="idSaldoTotal"></td>
+              </tr>
+            
+            </tbody>
+            <tfoot>
+                <button class="btn btn-primary" onclick="ingresarMonto()">Depositar</button>
+                <button class="btn btn-warning" onclick="retirarMonto()">Retirar Monto</button>
+                <div id="hora"></div>
+            </tfoot>
+          </table>
+          <div id="detalles">
+            <button class="btn btn-primary" onclick="mostrarTabla()"> Detalles de Transaccion <i class="fa-regular fa-clock"></i></button>
+            <table id="tablaDetalles" class="table table-bordered "  style="display:none">
+                <!-- Aquí van las filas y columnas de tu tabla -->
+                <thead class="table-info">
+                   <tr>
+                      <th>Hora</th>
+                      <th>Tipo de Transaccion</th>
+                      <th>Monto</th>
+                      <!-- Agrega más columnas según sea necesario -->
+                   </tr>
+                </thead>
+                <tbody>
+                   <!-- Aquí van los datos de la tabla -->
+                   <tr>
+                      
+                      <!-- Agrega más datos según sea necesario -->
+                   </tr>
+                </tbody>
+             </table>
+        </div>
+    </div>
+
+
+    
+    <script src="js/admin.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

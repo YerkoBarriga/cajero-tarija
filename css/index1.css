@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*estilos para todos los elememtos html para mi pagina */
+*{
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /*m epermite deslizar cuando hago clip en los menus*/
+    scroll-behavior: smooth;
+}
+
+/*MENU*/
+.contenedor-header{
+    background: linear-gradient(to  right, #00468f,  #25a1ee) ;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.contenedor-header header .logo a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    color: #fcfcfc;
+    text-decoration: none;
+
+}
+.contenedor-header header nav ul{
+    list-style: none;
+}
+.contenedor-header header nav ul li a{   
+    color: #fcfcfc;
+    text-decoration: none;
+}
+.nav-responsive{
+    
+    color: #fcfcfc;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.contenedor-login {
+    position: relative;
+    top: 70px;
+    background: linear-gradient(to bottom, #00468f, #25a1ee);
+    margin: auto;
+    border-radius: 15px;
+    max-width: 100%; /* Asegura que el ancho máximo no exceda el ancho de la ventana gráfica */
+    max-height: 100%;
+    width: 50%; /* Ajusta según tus necesidades */
+    height: 400px; /* Permite que la altura se ajuste automáticamente según el contenido */
+    padding: 20px; /* Ajusta el relleno según tus necesidades */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del contenedor */
+    
+}
+.cabecera{
+    position: absolute;
+    background: linear-gradient(to bottom, #00468f,  #25a1ee);
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+ 
+}
+.cabecera ul{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    list-style: none;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.contenedor-form{
+    margin-top: 50px;
+    flex-grow: 1;
+    margin-bottom: 40px
+   
+}
+.body .contenedor-form .user-input{
+    display: flex;
+    height: 52px;
+    margin: 18px 0;
+    align-items: center;
+  }
+.body .contenedor-form .user-password {
+    display: flex;
+    height: 52px;
+    margin: 18px 0;
+    align-items: center;
+  }
+.body .contenedor-form .user-input input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #C7BEBE;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+.body .contenedor-form .user-password input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #C7BEBE;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+.body .contenedor-form .button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body .contenedor-form .start-sesion{
+    
+    margin: auto;
+    height: 30px;
+    width: 65%;
+    margin: 0 auto;
+    outline: none;
+    padding: 0 15px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    
+  }
+
+
+.contenedor-login  footer  {
+    margin-top: auto;
+    color: #fcfcfc;
+    text-align: center;
+}
+
+
+/* Media query para pantallas pequeñas (ancho máximo de 480px) */
+@media (max-width:700px) {
+    .contenedor-login {
+      width: 90%; /* Cambia el ancho al 100% en pantallas pequeñas */
+      padding: 10px; /* Ajusta el relleno según tus necesidades */
+      height: auto;
+    }
+  }
+
+

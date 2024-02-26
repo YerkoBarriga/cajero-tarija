@@ -1,7 +1,7 @@
 var usuarios = [
     {user:'yerko',cuenta:1234,nombre:'juvenal yerko',ap:'barriga solano',correo:'yerko@gmail.com',saldo:5840},
-    {user:'juan',cuenta:12345,saldo:5500},
-    {user:'ulises',cuenta:123456,saldo:7800}
+    {user:'juan',cuenta:12345,nombre:'luis miguel',ap:'Ibarra',correo:'luis@gmail.com',saldo:5500},
+    {user:'ulises',cuenta:123456,nombre:'cristiano ronaldo',ap:'Castillo',correo:'cristiano@gmail.com',saldo:7800}
 ];
 function verficarCredencial(){
     let userInput    =  document.getElementById('usuario').value;
